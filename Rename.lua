@@ -67,7 +67,7 @@ local redzlib = {
 	Elements = {},
 	Options = {},
 	Flags = {},
-	Tabs = {}, be 
+	Tabs = {}, 
 	Icons = (function()
 		return {
 			["accessibility"] = "rbxassetid://10709751939",
@@ -5203,3 +5203,4 @@ ShowIntro(function()
 
 
 end)
+
