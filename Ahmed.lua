@@ -1,25 +1,33 @@
--- [[ AHMED HUB | BY TARAF69788 ]] --
--- السيطرة الكاملة لـ Taraf69788
+-- [[ CLAN ZERO | OFFICIAL SCRIPT ]] --
+-- حقوق السيطرة الكاملة لـ CLAN ZERO
+-- المطور: Taraf69788
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("AHMED HUB | BROOKHAVEN", "DarkTheme")
+-- تغيير العنوان الرئيسي للسكربت
+local Window = Library.CreateLib("CLAN ZERO HUB | BY TARAF", "DarkTheme")
 
--- التبويبات
+-- [ التبويبات ]
 local Main = Window:NewTab("الرئيسية")
-local Section = Main:NewSection("مرحباً بك: " .. game.Players.LocalPlayer.Name)
+local Section = Main:NewSection("مرحباً بك في Clan Zero")
 
--- تشغيل السكربت المدمج
-Section:NewButton("تفعيل المحرك الأساسي", "تشغيل السكربت الضخم", function()
-    -- هذا يستدعي ملف الـ 3MB الذي رفعته أنت في MainSource.lua
+-- [ تشغيل المحرك ]
+Section:NewButton("تفعيل المحرك الرئيسي", "تشغيل قوة Clan Zero", function()
+    -- استدعاء ملفك الضخم (المحرك) من حسابك
     loadstring(game:HttpGet("https://raw.githubusercontent.com/rafda995-boop/Ahmed-Hub/refs/heads/main/MainSource.lua"))()
     
-    Library:Notify("تم التفعيل", "تم تشغيل Ahmed Hub بنجاح", "rbxassetid://4483345998")
+    Library:Notify("CLAN ZERO", "تم تفعيل السكربت بنجاح", "rbxassetid://4483345998")
 end)
 
--- قسم الحقوق
-local Credits = Window:NewTab("المطور")
-local CredSection = Credits:NewSection("بواسطة: Taraf69788")
-CredSection:NewButton("نسخ التليجرام", "نسخ المعرف لحافظتك", function()
+-- [ قسم حقوق الكلان ]
+local Credits = Window:NewTab("الحقوق")
+local CredSection = Credits:NewSection("OWNED BY: CLAN ZERO")
+
+CredSection:NewButton("المطور: Taraf69788", "نسخ المعرف", function()
     setclipboard("@A_K_8_H")
-    Library:Notify("تم النسخ", "تم نسخ المعرف بنجاح", "rbxassetid://4483345998")
+    Library:Notify("Clan Zero", "تم نسخ معرف المطور", "rbxassetid://4483345998")
 end)
+
+CredSection:NewLabel("VOID Clan & CLAN ZERO ON TOP")
+
+-- إضافة إشعار عند التشغيل
+Library:Notify("Clan Zero Hub", "تم التحميل بواسطة Taraf69788", "rbxassetid://4483345998")
