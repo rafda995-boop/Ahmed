@@ -1,42 +1,22 @@
---[[
-    Managed by: Taraf69788 (Ahmed)
-    Power: ZERO Fling System
-]]
+-- Decoded by Ahmed (Taraf69788) | CLAN ZERO
+-- Original Script from: kllooep
 
-local function FlingTarget(TargetPlayerName)
-    local Player = game.Players.LocalPlayer
-    local Target = game.Players:FindFirstChild(TargetPlayerName)
-    
-    if Target and Target.Character and Target.Character:FindFirstChild("HumanoidRootPart") then
-        local Character = Player.Character
-        local RootPart = Character and Character:FindFirstChild("HumanoidRootPart")
-        local TargetRoot = Target.Character.HumanoidRootPart
-        
-        -- حفظ الوضع الحالي
-        local OldVelocity = RootPart.Velocity
-        
-        -- تفعيل نظام التدوير السريع (Fling Physics)
-        local BodyThrust = Instance.new("BodyThrust")
-        BodyThrust.Parent = RootPart
-        BodyThrust.Force = Vector3.new(999999, 0, 999999) -- قوة الدفع
-        BodyThrust.Location = RootPart.Position
-        
-        -- الاندفاع نحو الهدف
-        task.spawn(function()
-            while BodyThrust.Parent do
-                RootPart.Velocity = Vector3.new(999999, 999999, 999999)
-                RootPart.CFrame = TargetRoot.CFrame * CFrame.new(0, 0, 0)
-                task.wait()
-            end
-        end)
-        
-        -- إيقاف الفلنق بعد ثانية واحدة (لتجنب موتك أنت)
-        task.wait(1)
-        BodyThrust:Destroy()
-        RootPart.Velocity = OldVelocity
-    end
+local SoundService = game:GetService("SoundService")
+
+-- إزالة أي صوت قديم بنفس الاسم لتجنب التكرار
+if SoundService:FindFirstChild("Ahmed_Zero_Music") then
+    SoundService:FindFirstChild("Ahmed_Zero_Music"):Destroy()
 end
 
--- مثال للاستخدام:
--- FlingTarget("اسم_اللاعب_هنا")
+-- إنشاء الصوت وتشغيله مباشرة
+local music = Instance.new("Sound")
+music.Name = "Ahmed_Zero_Music"
+music.SoundId = "rbxassetid://131004089162099" -- هذا هو المعرف الحقيقي الذي كان مخفياً
+music.Volume = 1
+music.Looped = true
+music.Parent = SoundService
 
+music:Play()
+
+-- رسالة تأكيد في الكونسول (F9)
+print("Ahmed Hub: Music is now playing")
