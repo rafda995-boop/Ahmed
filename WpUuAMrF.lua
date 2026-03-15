@@ -1,5 +1,5 @@
 --[[
-    RW Hub. | v. 1.2 - 2026 (OFFICIAL VERSION)
+    ZERO Hub. | v. 1.2 - 2026 (OFFICIAL VERSION)
     المميزات:
     1- واجهة فائقة العرض (600px) بخطوط نظيفة واحترافية.
     2- سرعة بانق خارقة (50) مع مسميات: (مص) و (اغتصاب).
@@ -14,7 +14,7 @@ local lp = Players.LocalPlayer
 
 -- [ 1. نظام إشعارات التحميل والبدء ]
 StarterGui:SetCore("SendNotification", {
-    Title = "RW Hub v. 1.2",
+    Title = "ZERO Hub v. 1.2",
     Text = "انتظر تفعيل السكربت...",
     Duration = 3
 })
@@ -22,7 +22,7 @@ StarterGui:SetCore("SendNotification", {
 task.wait(2.5) -- تأخير بسيط للتحميل
 
 StarterGui:SetCore("SendNotification", {
-    Title = "RW Hub v. 1.2",
+    Title = "ZERO Hub v. 1.2",
     Text = "تم تفعيل السكربت بنجاح ✅",
     Duration = 3
 })
