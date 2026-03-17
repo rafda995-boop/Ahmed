@@ -62,10 +62,11 @@ local v7 = CreateObject("ImageLabel", {
     Name = "UserImage",
     Parent = v6,
     BackgroundTransparency = 1,
-    Image = "rbxassetid://124619498801713",
+    Image = "rbxthumb://type=Asset&id=124619498801713&w=420&h=420", -- هذه الصيغة تضمن ظهور الصورة فوراً
     Position = UDim2.new(0, 15, 0, 10),
-    Size = UDim2.new(0, 50, 0, 50)
+    Size = UDim2.new(0, 65, 0, 65) -- تكبير بسيط لتوضيح شعار "أحمد"
 });
+
 local Stroke = Instance.new("UIStroke", v7)
 Stroke.Thickness = 2.5
 task.spawn(function()
