@@ -62,10 +62,18 @@ local v7 = CreateObject("ImageLabel", {
     Name = "UserImage",
     Parent = v6,
     BackgroundTransparency = 1,
-    Image = "rbxassetid://76439838647514",
+    Image = "rbxassetid://124619498801713",
     Position = UDim2.new(0, 15, 0, 10),
     Size = UDim2.new(0, 50, 0, 50)
 });
+local Stroke = Instance.new("UIStroke", v7)
+Stroke.Thickness = 2.5
+task.spawn(function()
+    while task.wait() do
+        Stroke.Color = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+    end
+end)
+
 v4(25, v7);
 local v8 = CreateObject("TextLabel", {
     Name = "UserName",
