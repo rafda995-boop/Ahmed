@@ -252,7 +252,7 @@ end
 wait(0.32)
 
 local Sound = Instance.new("Sound", game:GetService("SoundService"));
-Sound.SoundId = "rbxassetid://131004009162099";
+Sound.SoundId = "rbxassetid://124619498801713";
 Sound:Play();
 
 game:GetService("ReplicatedStorage").RE["1RPNam1eTex1t"]:FireServer("RolePlayName", "سـكـربت الـمطـور زيرو 0.1V")
