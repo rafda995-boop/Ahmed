@@ -1,0 +1,25 @@
+cat <<EOF > index.html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مشاهدة فيديوهات دايلي موشن</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f0f0; text-align: center; }
+        .video-container { display: inline-block; margin: 10px; background: white; padding: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        iframe { border: none; width: 320px; height: 180px; }
+        h1 { color: #ff0000; }
+    </style>
+</head>
+<body>
+    <h1>مكتشف فيديوهات Ahmed-Hub</h1>
+    <div id="gallery">
+        <!-- الفيديوهات ستظهر هنا -->
+        <div class="video-container"><iframe src="https://www.dailymotion.com/embed/video/xa1kn82" allowfullscreen></iframe></div>
+        <div class="video-container"><iframe src="https://www.dailymotion.com/embed/video/xa1t7x8" allowfullscreen></iframe></div>
+        <div class="video-container"><iframe src="https://www.dailymotion.com/embed/video/xa1synw" allowfullscreen></iframe></div>
+    </div>
+</body>
+</html>
+EOF
+
