@@ -1,5 +1,5 @@
 wait(0.2)
-shared.LoaderTitle = "「 تابعني انستا يا عسل dragonlnx 」";
+shared.LoaderTitle = "「 تابعني انستا يا عسل sdf_a7 」";
 shared.LoaderKeyFrames = {
     [1] = {1, 10},
     [2] = {2, 30},
